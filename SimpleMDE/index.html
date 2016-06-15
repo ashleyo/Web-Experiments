@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+<link rel="stylesheet" href="css/simplemde.min.css">
+</head>
+<body>
+
+<form>
+<textarea id="mdetarget" rows='10' cols='80'></textarea>
+</form>
+<script>
+var simplemde = new SimpleMDE({ 
+element: document.getElementById("mdetarget"),
+toolbar: ["preview", "|", "bold", "italic", "strikethrough", "|", "heading", "unordered-list", "ordered-list", "|", "code", "quote", "|", "link", "image", "table", "horizontal-rule", "guide"]
+});
+simplemde.value("Hello world");
+</script>
+</body>
+</html>
